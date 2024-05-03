@@ -56,8 +56,8 @@ You can customize the text generation by modifying the parameters in the script.
 
 For more information and advanced usage of GenAI LLM, refer to the following resources:
 
-- [OpenAI Documentation](https://docs.openai.com/)
-- [OpenAI API Reference](https://beta.openai.com/docs/)
+- [OpenAI Documentation](https://platform.openai.com/docs/introduction)
+- [OpenAI API Reference](https://platform.openai.com/docs/api-reference)
 - [OpenAI GitHub Repository](https://github.com/openai)
 
 ## Feedback
