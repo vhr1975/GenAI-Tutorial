@@ -49,6 +49,22 @@ Copy code
 python generate_text.py
 ```
 
+### Running the projects
+
+### Frontend 
+```bash
+cd frontend/
+chainlit run demo.py --port=3200 --watch  
+```
+![ChainLit](assets/chainlit_frontend_ui.png)
+
+### Backend
+```bash
+cd backend/
+uvicorn main:app --reload 
+```
+![ChainLit](assets/fastapi_backend.png)
+
 ### Customizing Generation 🛠️
 You can customize the text generation by modifying the parameters in the script. The prompt variable defines the starting text for the model to continue. Experiment with different prompts to see how the model responds.
 
