@@ -1,6 +1,15 @@
 # GenAI-Tutorial 🤖
 
-Welcome to the GenAI LLM Tutorial! In this tutorial, you'll learn how to use OpenAI's Generative Artificial Intelligence Language Model (GenAI LLM) to generate text.
+Welcome to the GenAI Tutorial repository! In this repository, you'll find tutorials on how to use OpenAI's Generative Artificial Intelligence Language Model (GenAI LLM) to generate text.
+
+## Tutorials Included 📚
+
+This repository contains the following self-contained tutorials:
+
+1. **Chroma QA Chat**: Learn how to build a question-answering chatbot using GenAI LLM.
+2. **OpenAI Chat**: Explore how to create a chatbot using GenAI LLM for various conversational tasks.
+3. **RAG**: Understand how to use Retrieval-Augmented Generation (RAG) with GenAI LLM for enhanced text generation.
+4. **Resume Chat**: Dive into building a chatbot that generates resumes based on user input.
 
 ## Getting Started 🚀
 
@@ -10,73 +19,30 @@ Before you begin, make sure you have the following installed:
 
 - Python 3
 - OpenAI Python Library (`openai`)
-
-You can install the OpenAI Python library via pip:
-
-```bash
-pip install openai
-```
+- Literal API key (`literalai`)
 
 ### OpenAI API Key 🔑
 To use the GenAI LLM, you'll need an OpenAI API key. If you don't have one, you can sign up for the API access here.
 
-Once you have your API key, set it as an environment variable:
-
-```bash
-Copy code
-export OPENAI_API_KEY='your-api-key'
-```
+### LiteralAI API Key 🔑
+To use the GenAI LLM, you'll need an LiteralAI API key. If you don't have one, you can sign up for the API access here.
 
 ### Cloning the Repository ⬇️
-
 Clone this repository to your local machine:
 
 ```bash
-Copy code
-git clone https://github.com/your-username/genai-llm-tutorial.git
-cd genai-llm-tutorial
+git clone https://github.com/your-username/genai-tutorial.git
+cd genai-tutorial
 ```
 
-## Usage ℹ️
-
-### Running the Example Script ▶️
-In the repository, you'll find an example Python script generate_text.py. This script demonstrates how to generate text using GenAI LLM.
-
-Run the script:
-
-```bash
-Copy code
-python generate_text.py
-```
-
-### Running the projects
-
-### Frontend 
-```bash
-cd frontend/
-chainlit run demo.py --port=3200 --watch  
-```
-![ChainLit](assets/chainlit_frontend_ui.png)
-
-### Backend
-```bash
-cd backend/
-uvicorn main:app --reload 
-```
-![ChainLit](assets/fastapi_backend.png)
-
-### Customizing Generation 🛠️
-You can customize the text generation by modifying the parameters in the script. The prompt variable defines the starting text for the model to continue. Experiment with different prompts to see how the model responds.
-
-## Additional Resources ℹ️
-
+### Additional Resources ℹ️
 For more information and advanced usage of GenAI LLM, refer to the following resources:
 
-- [OpenAI Documentation](https://platform.openai.com/docs/introduction)
-- [OpenAI API Reference](https://platform.openai.com/docs/api-reference)
-- [OpenAI GitHub Repository](https://github.com/openai)
+- OpenAI Documentation
+- OpenAI API Reference
+- OpenAI GitHub Repository
 
-## Feedback 📣
+### Feedback 📣
 If you encounter any issues or have suggestions for improvement, feel free to open an issue or submit a pull request in this repository.
 
 Happy generating! 🎉
