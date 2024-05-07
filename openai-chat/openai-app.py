@@ -50,16 +50,12 @@ async def on_message(message: cl.Message):
     response = await client.chat.completions.create(
         messages=[
             {
-                ################################################################################################
-                # TODO : Add your system prompt here. 
-                # TODO : Add you system role here. 
-                ################################################################################################
+                "content": "You are a helpful bot, you always reply in Spanish",
+                "role": "system"
             },
             {
-                ################################################################################################
-                # TODO : Add your content here. 
-                # TODO : Add your user role here. 
-                ################################################################################################
+                "content": message.content,
+                "role": "user"
             }
         ],
         **settings
