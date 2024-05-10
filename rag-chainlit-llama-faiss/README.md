@@ -44,7 +44,7 @@ LangChain is a framework for developing applications powered by language models.
 2. Reason: rely on a language model to reason (about how to answer based on provided context, what actions to take, etc.)
 3. ***We are using Langchain to connect to LLM - LLAMA2***
 
-## Llama 2
+## Llama 2 🦙
 
 Llama 2 was pretrained on publicly available online data sources.
 The fine-tuned model, Llama Chat, leverages publicly available instruction datasets and over 1 million human annotations.
