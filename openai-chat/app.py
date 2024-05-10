@@ -7,8 +7,14 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
+# Get your OpenAI API key from the environment variables
+openai_api_key="your-api-key"
+
+# Initialize OpenAI client with your API key
+client = AsyncOpenAI(api_key=openai_api_key)
+
 # Initialize OpenAI client
-client = AsyncOpenAI()
+# client = AsyncOpenAI()
 
 # Instrument the OpenAI client with Chainlit
 cl.instrument_openai()
