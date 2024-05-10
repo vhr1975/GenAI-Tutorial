@@ -1,19 +1,24 @@
 from operator import itemgetter
-
 from langchain_community.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.schema.output_parser import StrOutputParser
 from langchain.schema.runnable import Runnable, RunnablePassthrough, RunnableLambda
 from langchain.schema.runnable.config import RunnableConfig
 from langchain.memory import ConversationBufferMemory
-
 from chainlit.types import ThreadDict
 import chainlit as cl
+import os
+from dotenv import load_dotenv
 
+# Load environment variables from .env file
+load_dotenv()
+
+# Get your OpenAI API key
+openai_api_key="your-openai-api-key"
 
 def setup_runnable():
     memory = cl.user_session.get("memory")  # type: ConversationBufferMemory
-    model = ChatOpenAI(streaming=True)
+    model = ChatOpenAI(streaming=True, api_key=openai_api_key)  # Initialize ChatOpenAI with your API key
     prompt = ChatPromptTemplate.from_messages(
         [
             ("system", "You are a helpful chatbot"),
