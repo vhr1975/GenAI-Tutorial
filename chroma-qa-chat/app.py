@@ -14,15 +14,21 @@ from langchain.schema.runnable import Runnable, RunnablePassthrough, RunnableCon
 from langchain.callbacks.base import BaseCallbackHandler
 
 import chainlit as cl
+import os
+from dotenv import load_dotenv
 
+# Load environment variables from .env file
+load_dotenv()
+
+# Get your OpenAI API key from the environment variables
+openai_api_key="your-openai-api-key"
 
 chunk_size = 1024
 chunk_overlap = 50
 
-embeddings_model = OpenAIEmbeddings()
+embeddings_model = OpenAIEmbeddings(api_key=openai_api_key)  # Initialize OpenAIEmbeddings with your API key
 
 PDF_STORAGE_PATH = "./pdfs"
-
 
 def process_pdfs(pdf_storage_path: str):
     pdf_directory = Path(pdf_storage_path)
@@ -56,7 +62,7 @@ def process_pdfs(pdf_storage_path: str):
 
 
 doc_search = process_pdfs(PDF_STORAGE_PATH)
-model = ChatOpenAI(model_name="gpt-4", streaming=True)
+model = ChatOpenAI(model_name="gpt-4", streaming=True, api_key=openai_api_key)  # Initialize ChatOpenAI with your API key
 
 
 @cl.on_chat_start
