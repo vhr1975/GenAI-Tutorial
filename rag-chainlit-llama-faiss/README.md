@@ -2,6 +2,20 @@
 
 Welcome to the Camino de Santiago 🤖 Expert, your trusted companion for your pilgrimage journey! Our chatbot is here to empower you with knowledge and solutions that not only enhance your travel experience but also contribute to a sustainable world. Whether you have questions about the Camino routes or seek insights into local culture and history, we've got you covered. Join us on a journey to explore the Camino de Santiago, making a positive impact every day.
 
+## Installation
+
+To install the required dependencies, run the following command:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Running the Chainlit UI
+
+```bash
+chainlit run app.py
+```
+
 ## Retrieval Augmented Generation
 
 We are using a methodology called Retrieval Augmented generation:
@@ -47,9 +61,3 @@ Chainlit is an open-source Python package that makes it incredibly fast to build
 
 ## [BOT 🤖 DEMO LINK](https://www.youtube.com/watch?v=AnA3aqsuNN0)
 
-## Future Steps
-
-1. Deploy the application
-2. Gather more data about and keep on updating the existing information
-3. Try different LLM's that give better results
-4. Open for collaboration and new IDEAS
