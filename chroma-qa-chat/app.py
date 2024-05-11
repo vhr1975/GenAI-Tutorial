@@ -15,10 +15,6 @@ from langchain.callbacks.base import BaseCallbackHandler
 
 import chainlit as cl
 import os
-from dotenv import load_dotenv
-
-# Load environment variables from .env file
-load_dotenv()
 
 # Get your OpenAI API key from the environment variables
 openai_api_key="your-openai-api-key"
