@@ -66,9 +66,9 @@ cd genai-tutorial
 ### Additional Resources ℹ️
 For more information and advanced usage of GenAI LLM, refer to the following resources:
 
-- OpenAI Documentation
-- OpenAI API Reference
-- OpenAI GitHub Repository
+- [OpenAI Documentation](https://platform.openai.com/docs/introduction)
+- [OpenAI API Reference](https://platform.openai.com/docs/api-reference)
+- [OpenAI GitHub Repository](https://github.com/openai)
 
 ### Feedback 📣
 If you encounter any issues or have suggestions for improvement, feel free to open an issue or submit a pull request in this repository.
