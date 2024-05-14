@@ -20,8 +20,8 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
-# Get your OpenAI API key from the environment variables
-openai_api_key="your-openai-api-key"
+# Set your OpenAI API key
+openai_api_key="your-openai-api-key" 
 
 chunk_size = 1024
 chunk_overlap = 50
