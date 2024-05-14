@@ -58,6 +58,3 @@ Chainlit is an open-source Python package that makes it incredibly fast to build
 - This integrates everything above and gives us a user interface, lets take a look at it below
 
 <img src="images/chainlit.png" alt="Bot">
-
-## [BOT 🤖 DEMO LINK](https://www.youtube.com/watch?v=AnA3aqsuNN0)
-
