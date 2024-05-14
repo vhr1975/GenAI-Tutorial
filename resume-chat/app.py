@@ -17,13 +17,21 @@ load_dotenv()
 openai_api_key="your-openai-api-key"
 
 def setup_runnable():
-    memory = cl.user_session.get("memory")  # type: ConversationBufferMemory
-    model = ChatOpenAI(streaming=True, api_key=openai_api_key)  # Initialize ChatOpenAI with your API key
-    prompt = ChatPromptTemplate.from_messages(
+
+    ################################################################################################
+    
+    # TODO Initialize ChatOpenAI with your API key
+    memory = ...  # type: ConversationBufferMemory
+    
+    # TODO Initialize ChatOpenAI with your API key
+    model = ...  # Initialize ChatOpenAI with your API key
+
+
+    ################################################################################################
+    # TODO Set up the prompt
+    prompt = ChatPromptTemplate.from_mehatOpessages(
         [
-            ("system", "You are a helpful chatbot"),
-            MessagesPlaceholder(variable_name="history"),
-            ("human", "{question}"),
+           # TODO Set up the prompt
         ]
     )
 
