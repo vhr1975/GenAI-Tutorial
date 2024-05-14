@@ -7,14 +7,11 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
-# Get your OpenAI API key from the environment variables
+# Get your OpenAI API key
 openai_api_key="your-api-key"
 
 # Initialize OpenAI client with your API key
 client = AsyncOpenAI(api_key=openai_api_key)
-
-# Initialize OpenAI client
-# client = AsyncOpenAI()
 
 # Instrument the OpenAI client with Chainlit
 cl.instrument_openai()
@@ -52,20 +49,20 @@ async def on_message(message: cl.Message):
     # Call the tool
     tool()
 
-    # Generate a response using the OpenAI model
+    # TODO: Generate a response using the OpenAI model
     response = await client.chat.completions.create(
         messages=[
-            {
-                "content": "You are a helpful bot, you always reply in Spanish",
-                "role": "system"
-            },
-            {
-                "content": message.content,
-                "role": "user"
-            }
+            ########################################################
+            # TODO add missing code here
+
+
+
+
+            ########################################################
         ],
         **settings
     )
+
 
     # Send the response back to the user
     await cl.Message(content=response.choices[0].message.content).send()
