@@ -33,21 +33,35 @@ PDF_STORAGE_PATH = "./pdfs"
 def process_pdfs(pdf_storage_path: str):
     pdf_directory = Path(pdf_storage_path)
     docs = []  # type: List[Document]
-    text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
+
+    ####################################################################################
+    # TODOD split the PDFs into chunks
+    text_splitter = ...
+    ####################################################################################
 
     for pdf_path in pdf_directory.glob("*.pdf"):
         loader = PyMuPDFLoader(str(pdf_path))
         documents = loader.load()
         docs += text_splitter.split_documents(documents)
 
-    doc_search = Chroma.from_documents(docs, embeddings_model)
+    ####################################################################################
+
+    # TODO Create a ChromaDB vector database from the documents
+    doc_search = ...
+    ####################################################################################
+
 
     namespace = "chromadb/my_documents"
+
+    # Create a SQLRecordManager
     record_manager = SQLRecordManager(
         namespace, db_url="sqlite:///record_manager_cache.sql"
     )
+
+    # Create the index schema
     record_manager.create_schema()
 
+    # Index the documents
     index_result = index(
         docs,
         record_manager,
@@ -62,8 +76,11 @@ def process_pdfs(pdf_storage_path: str):
 
 
 doc_search = process_pdfs(PDF_STORAGE_PATH)
-model = ChatOpenAI(model_name="gpt-4", streaming=True, api_key=openai_api_key)  # Initialize ChatOpenAI with your API key
 
+####################################################################################
+# TODO Initialize ChatOpenAI with your API key
+model = ...  
+####################################################################################
 
 @cl.on_chat_start
 async def on_chat_start():
