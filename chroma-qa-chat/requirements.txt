@@ -1,7 +1,0 @@
-langchain
-chainlit
-langchain_openai
-openai
-chromadb
-tiktoken
-pymupdf
