@@ -31,6 +31,9 @@ pip install -r requirements.txt
 ```
 
 2. **Run the Application:**
+```shell
+chainlit run app.py -w
+```
 
 
 ## Code Definitions
