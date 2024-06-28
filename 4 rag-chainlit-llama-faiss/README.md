@@ -2,12 +2,31 @@
 
 Welcome to the Camino de Santiago 🤖 Expert, your trusted companion for your pilgrimage journey! Our chatbot is here to empower you with knowledge and solutions that not only enhance your travel experience but also contribute to a sustainable world. Whether you have questions about the Camino routes or seek insights into local culture and history, we've got you covered. Join us on a journey to explore the Camino de Santiago, making a positive impact every day.
 
+## Tech Stack
+
+Our Camino de Santiago Expert leverages the following technologies to provide an innovative and efficient service:
+
+- **FAISS (Facebook AI Similarity Search):** For efficient similarity search and clustering of dense vectors.
+- **LangChain:** To facilitate the creation and management of language applications.
+- **Llama 2:** Utilized for its powerful language model capabilities.
+- **Chainlit:** For building and deploying interactive, data-driven web applications.
+
+This combination of technologies ensures that our chatbot is not only responsive and knowledgeable but also capable of understanding and processing complex queries with ease.
+
 ## Installation
 
 To install the required dependencies, run the following command:
 
 ```bash
 pip install -r requirements.txt
+```
+
+## Documentation Ingestion
+
+Before running the Chainlit UI, ensure you have ingested the necessary documentation using the following command:
+
+```bash
+python ingest_docs.py
 ```
 
 ## Running the Chainlit UI
@@ -32,7 +51,8 @@ In RAG, the external data can come from multiple data sources, such as a documen
 
 1. Gathered Data about Camino de Santiago routes
 2. Using various travel guides and historical texts for Camino data
-3. Using ***FAISS-CPU*** as **vector database** to store data in chunks, which will then help is in retrieving data chunks using semantic search
+3. Use the Facebook AI Similarity Search (Faiss) libaray to ingest the documents. 
+4. Using ***FAISS-CPU*** as **vector database** to store data in chunks, which will then help is in retrieving data chunks using semantic search
 
 Note: All the data is in the pdf format
 
