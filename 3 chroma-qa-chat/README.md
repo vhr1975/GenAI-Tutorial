@@ -25,26 +25,18 @@ The `app.py` script performs the following functions:
 
 ### Setup and Run
 
-1. **Install Dependencies:**
+1. **Install Dependencies:** Install the required Python packages specified in `requirements.txt`.
+   ```shell
+   pip install -r requirements.txt
+   ```
 
-Install the required Python packages specified in `requirements.txt`.
+2. **Process PDFs:** Place your PDF documents in the `./pdfs` directory.
 
-```shell
-pip install -r requirements.txt
-```
-
-2. **Process PDFs:**
-
-Place your PDF documents in the `./pdfs` directory.
-
-3. **Run the Application:**
-
-Use the provided `Dockerfile` to build and run the application.
-
-```shell
-docker build -t chroma-qa-chat .
-docker run -p 7860:7860 chroma-qa-chat
-```
+3. **Run the Application:** Use the provided `Dockerfile` to build and run the application.
+   ```shell
+   docker build -t chroma-qa-chat .
+   docker run -p 7860:7860 chroma-qa-chat
+   ```
 
    Access the application at `http://localhost:7860`.
 
@@ -60,4 +52,3 @@ docker run -p 7860:7860 chroma-qa-chat
 ## See Also
 
 For a visual guide on how to use this application, watch the video by [Chris Alexiuk](https://www.youtube.com/watch?v=9SBUStfCtmk&ab_channel=ChrisAlexiuk).
-
