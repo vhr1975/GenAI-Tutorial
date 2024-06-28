@@ -22,7 +22,7 @@ Before you begin, make sure you have the following installed:
 - Literal API key (`literalai`)
 
 ### OpenAI API Key 🔑
-To use the GenAI LLM, you'll need an OpenAI API key. If you don't have one, you can sign up for the API access here.
+To use the GenAI LLM, you'll need an OpenAI API key. If you don't have one, you can sign up for the API access [here](https://openai.com/api/).
 
 ### LiteralAI API Key 🔑
 To use the GenAI LLM, you'll need an LiteralAI API key. If you don't have one, you can sign up for the API access here.
