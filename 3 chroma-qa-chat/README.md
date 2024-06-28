@@ -48,7 +48,3 @@ The `app.py` script performs the following functions:
 - `PostMessageHandler`: Callback handler that posts the sources of the retrieved documents as a Chainlit element.
 
 ![Screenshot](./screenshot.png)
-
-## See Also
-
-For a visual guide on how to use this application, watch the video by [Chris Alexiuk](https://www.youtube.com/watch?v=9SBUStfCtmk&ab_channel=ChrisAlexiuk).
