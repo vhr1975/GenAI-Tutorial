@@ -37,7 +37,7 @@ chainlit run app.py
 
 ## Retrieval Augmented Generation
 
-We are using a methodology called Retrieval Augmented generation:
+We are using a methodology called Retrieval Augmented Generation:
 
 ![Retrival Augmented Generation Methodology](images/rag.jpg)
 

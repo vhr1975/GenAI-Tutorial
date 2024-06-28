@@ -8,7 +8,7 @@ This repository contains the following self-contained tutorials:
 
 1. **OpenAI Chat**: Explore how to create a chatbot using GenAI LLM for various conversational tasks.
 2. **Resume Chat**: Dive into building a chatbot that holds chat memory to be able to resume chats based on user input.
-3. **Chroma QA Chat**: Learn how to build a question-answering chatbot using GenAI LLM.
+3. **Chroma QA Chat**: Learn how to build a question-answering chatbot using GenAI LLM and documents stored in a Chroma vector DB.
 4. **RAG Chat**: Understand how to use Retrieval-Augmented Generation (RAG) with GenAI LLM for enhanced text generation.
 
 ## Getting Started 🚀
