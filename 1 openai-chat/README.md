@@ -12,7 +12,7 @@ This project demonstrates how to integrate OpenAI's GPT models with Chainlit, a 
 
 1. **Install Dependencies:** Ensure you have Python installed, then install the required libraries using pip:
    ```bash
-   pip install chainlit openai python-dotenv
+   pip install -r requirements.txt
    ```
 
 2. **Environment Variables:** Create a `.env` file in the root directory and add your OpenAI API key:
