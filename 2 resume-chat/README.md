@@ -32,6 +32,8 @@ To start using this application, follow these steps:
    ```shell
    chainlit create secret
    ``` 
+   **Note:** Copy the generate secret into your .env file. Once it is set, changing it will logout all users with active sessions.
+
 3. Copy the following secret into your .env file.
 4. Run the application. It will listen for chat start, resume, and message events.
    ```shell
