@@ -5,3 +5,4 @@ openai
 chromadb
 tiktoken
 pymupdf
+langchain_community
